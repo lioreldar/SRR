@@ -126,8 +126,8 @@ def generate_bounding_rect(covariance, mean):
 
     # compute rectangle attributes
     ellipsoid_angle = np.arctan2(-eigenvectors[0, 0], eigenvectors[1, 0])
-    width = GMM_Params.side_length  # * np.sqrt(eigenvalues[1])
-    height = GMM_Params.side_width  # * np.sqrt(eigenvalues[0])
+    width = GMM_Params.side_width  # * np.sqrt(eigenvalues[1])
+    height = GMM_Params.side_height  # * np.sqrt(eigenvalues[0])
     w_shift = width * np.array([eigenvectors[0, 1], eigenvectors[1, 1]])
     h_shift = height * np.array([eigenvectors[0, 0], eigenvectors[1, 0]])
 
