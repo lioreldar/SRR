@@ -20,6 +20,8 @@ def shift_to_positive_orthant(vector):
 
     return vector
 
+def me_be_test_func():
+    pass
 
 def generate_dist(covMat, mean):
     noisy_vector = None
